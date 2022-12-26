@@ -22,7 +22,7 @@ import com.proalekse1.shoppinglist.fragments.ShopListNamesFragment
 import com.proalekse1.shoppinglist.settings.SettingsActivity
 
 
-class MainActivity : AppCompatActivity(), NewListDialog.Listener {
+class MainActivity : AppCompatActivity(), NewListDialog.Listener { // тестовый комментарий для гит
     lateinit var binding: ActivityMainBinding
     private lateinit var defPref: SharedPreferences //доступ для настроек по умолчанию
     private var currentMenuItemid = R.id.shop_list //для обновления вида после изменения настроек
