@@ -66,8 +66,8 @@ class MainActivity : AppCompatActivity(), NewListDialog.Listener {
             //колбек просто следит за тем то происходит с объявлением
             iAd?.fullScreenContentCallback = object : FullScreenContentCallback(){
                 override fun onAdDismissedFullScreenContent() { //нажал крестик закрыть объявление
-                    iAd = null //делаем null наше объявление потому что его уже посмотрели
-                    loadInterAd() //загрузим следующее объявление
+                    iAd = null // делаем null наше объявление потому что его уже посмотрели
+                    loadInterAd() // загрузим следующее объявление
                     adListener.onFinish() //если пользователь нажал крестик закрываем объявление
                 }
 
